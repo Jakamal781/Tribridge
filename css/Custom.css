@@ -1,0 +1,312 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /*font-family: 'Trebuchet MS', Arial, sans-serif;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+header {
+	margin-bottom: 0px;
+}
+.main {
+	height: auto;
+	width: 100%;
+	margin: 0;
+}
+
+.main > h2 {
+	color: #00467f;
+    margin-left: 10px;
+}
+.clear {
+	clear: both;
+}
+.header1 {
+	height: 90px;
+	width: 100%;
+	background-color: #00467f;
+	margin-top:0; 
+}
+#LogoImg {
+	height: 40px;
+	width: 100px;
+	margin-left: 5%;
+	float: left;
+	display: inline-block;
+	border: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#searchBox {
+ 	vertical-align: middle;
+ 	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+    margin-right: 10%;
+    display: inline-block;
+}
+.SmallImagesBox {
+    display: inline-block;
+    float: right;
+ 	vertical-align: middle;
+ 	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 10%;
+    width: auto;
+}
+#search { 
+    padding: 2px 9px;
+    height: 25px;
+    width: 180px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.SmallImages {
+    margin-left: 10px;
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+}
+.header2 {
+	height: auto;
+	width: 100%;
+	margin-top:0; 
+}
+.header2 > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #02396b;
+}
+.header2 > ul > li {
+	float: left;
+}
+.header2 > ul > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.header2 > ul > li a:hover {
+    background-color: #111;
+}
+
+#IconsBox {
+    width: 45%;
+    float: left;
+    margin-left: 5px;
+    height: auto;
+    display: inline-block;
+/*    background-color: green;*/
+    height: auto;
+}
+#IconsBoxInner {
+    width: 100%;
+/*    background-color: red;*/
+    display: block;
+    height: 50%;
+    float: left;
+    margin-left: 10%;
+}
+#IconsBoxesTiny {
+    height: auto;
+    width: 150px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    color: blue;
+    font-size: 12px;
+    display: inline-block;
+/*    background-color: orange;*/
+}
+.slideshow-content {
+    position:relative;
+    margin:0;
+    width:620px;
+    float:left;
+    margin-left: 10px;
+}
+
+.arrow-btn-floating:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+}
+.arrow-btn-floating {
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}   
+.arrow-btn-floating {
+    display:inline-block;
+    text-align:center;
+    color:#fff;
+    background-color:#000;
+    position:relative;
+    overflow:hidden;
+    z-index:1;
+    padding:0;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:24px;
+    margin: 10px;
+}
+.arrow-btn-floating {
+    width:40px;
+    height:40px;
+    line-height:40px
+    }
+
+.arrow-btn-floating:disabled {
+    cursor:not-allowed;
+    opacity:0.3
+}
+.arrow-btn-floating.arrow-disabled *,
+.arrow-btn-floating:disabled * {
+    pointer-events:none
+}
+.arrow-btn-floating.arrow-disabled:hover,
+.arrow-btn-floating:disabled:hover {
+    box-shadow:none
+}
+
+.arrow-btn-floating {
+    -webkit-transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s;
+    transition:background-color .3s,color .15s,box-shadow .3s,opacity 0.3s
+}
+
+
+
+
+.searchBox2 {
+    display: inline-block;
+    text-align: center;
+    width: 97.5%;
+    height: 150px;
+    margin-top:20px;
+    margin-left:10px;
+    background: #00487c; /* Old browsers */
+    background: -moz-linear-gradient(left,  #00487c 1%, #97c750 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #00487c 1%,#97c750 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #00487c 1%,#97c750 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00487c', endColorstr='#97c750',GradientType=1 ); /* IE6-9 */
+}
+#searchMiddle { 
+    padding: 2px 9px;
+    height: 35px;
+    width: 80%;
+    border: 1px solid #ffffff;
+    background-color:rgba(0, 0, 0, 0);
+    color: #ffffff;
+    border-radius: 3px;
+}
+.keywordSearch {
+    width: 70%;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffffff;
+/*    font: normal 13px 'trebuchet MS', arial, helvetica;*/
+
+}
+.box50 {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+}
+.widgets {
+    width: 100%;
+    height:300px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow:0 3px 5px 0 rgba(0,0,0,0.19);
+}
+.HeaderBoxBlue {
+    width: 100%;
+    height: auto;
+    background-color: #00467f;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px 5px 0px 0px;
+}
+.HeaderBoxBlue > h3 {
+    float: left;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.button {
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.HeaderBoxBody {
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+
+.footer {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    margin-top:20px;
+    background-color: #ededed;
+}
+
+.logoFooter {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.textFooter {
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
