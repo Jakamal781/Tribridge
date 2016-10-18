@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Title of the document</title>
+<link rel="stylesheet" type="text/css" href="css/Custom.css">
+
+<style type="text/css">
+@media screen and (max-width:680px) {
+  .header2 li:not(:first-child) {display: none;}
+  .header2 li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .header2.responsive {position: relative;}
+  .header2.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .header2.responsive li {
+    float: none;
+    display: inline;
+  }
+  .header2.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 916px) and (min-width: 0px) {
+	.header1 {
+		height: 250px;
+		width: 100%;
+		/*background-color: red;*/
+		text-align: center;
+		padding: 0 auto;
+	}
+	#LogoImg {
+		height: 40px;
+		width: 100px;
+		margin-left: 30%;
+		float: center;
+		display: block;
+		border: none;
+	    position: relative;
+	    top: 10%;
+	    transform: translateY(-10%);
+	}
+	#search { 
+	    padding: 2px 9px;
+	    height: 25px;
+	    width: 180px;
+	    float: left;
+	    border-radius: 3px;
+	    margin-right: 0px;
+	}
+	.slideshow-content {
+	    position:relative;
+	    margin:0;
+	    width:100%;
+	    float:left;
+	    margin-left: 0px;
+	}
+	.SmallImagesBox {
+	    display: block;
+	    float: center;
+	 	vertical-align: middle;
+	 	position: relative;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    margin-right: auto;
+	    margin-left: auto;
+	    width: auto;
+	}
+	.SmallImages {
+	    display: block;
+	    float: left;
+	    margin-left: 10px;
+	}
+	#IconsBox {
+	    width: 100%;
+	    margin-left: 0px;
+	    float: center;
+	    height: auto;
+	    display: block;
+	    /*background-color: green;*/
+	    height: auto;
+	    text-align: center;
+	}
+	#IconsBoxInner {
+	    width: 100%;
+	    /*background-color: red;*/
+	    display: block;
+	    height: 50%;
+	    float: center;
+	    margin-left: 0;
+	    text-align: center;
+	}
+	#IconsBoxesTiny {
+	    height: auto;
+	    width: 100%;
+	    float: left;
+	    margin: 10px 0px;
+	    text-align: center;
+	    color: blue;
+	    font-size: 12px;
+	    display: inline-block;
+	/*    background-color: orange;*/
+	}
+	.box50 {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 10px 0px;
+	}
+	.footer {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    margin-top:20px;
+	}
+	.logoFooter {
+	text-align: center;
+    width: auto;
+    height: auto;
+    float: center;
+    margin-left: 20%;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+	}
+}
+</style>
+  <script>
+    $(function(){
+      $("#slider").slidesjs({
+        width: 940,
+        height: 528
+      });
+    });
+  </script>
+</head>
+
+<body>
+	<header>
+		<div class="header1">
+			<img src="img/TribridgeLogo.png" id="LogoImg" alt="">
+<!-- 			<form id="searchBox" action="">
+				<input type="text" name="Search" value="Search" id="search"></input>
+			</form> -->
+			<div class="SmallImagesBox">
+				<input type="text" name="Search" value="Search" id="search"></input>
+				<img src="img/nav-btn-avatar.png" class="SmallImages" alt="">
+				<img src="img/nav-btn-cart.png" class="SmallImages" alt="">
+				<img src="img/nav-btn-settings.png" class="SmallImages" alt="">
+			</div>
+		</div>
+		<div class="header2" id="Header2">
+			<ul>
+			  <li><a class="active" href="#">Home</a></li>
+			  <li><a href="#">Performance</a></li>
+			  <li><a href="#">Learning</a></li>
+			  <li><a href="#">Career</a></li>
+			  <li><a href="#">Reports</a></li>
+			  <li><a href="#">Help</a></li>
+				<li class="icon">
+				  	<a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+	  			</li>
+			</ul>
+		</div>
+	</header>
+
+	<div class="main">
+		<h2>John Smith</h2>
+		<div class="slideshow-content">
+		  <img class="mySlides" src="img/Slider.png" style="width:auto">
+		  <img class="mySlides" src="img/Slider.png" style="width:auto">
+		  <img class="mySlides" src="img/Slider.png" style="width:auto">
+		  <img class="mySlides" src="img/Slider.png" style="width:auto">
+		  <a class="arrow-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+		  <a class="arrow-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+		</div>
+
+		<div id="IconsBox">
+			<div id="IconsBoxInner">
+				<div id="IconsBoxesTiny">
+					<img src="img/icon-employee-profile.png"><br/>
+					Employee Profile
+				</div>
+				<div id="IconsBoxesTiny">
+					<img src="img/icon-performance-goals.png"><br/>
+					Performance Goals
+				</div>
+				<div id="IconsBoxesTiny">
+					<img src="img/icon-performance-reviews.png"><br/>
+					Performance Reviews
+				</div>
+			</div>
+
+			<div id="IconsBoxInner">
+				<div id="IconsBoxesTiny">
+					<img src="img/icon-browse-training.png"><br/>
+					Browse for Training
+				</div>
+				<div id="IconsBoxesTiny">
+					<img src="img/icon-class-calendar.png"><br/>
+					Class Calendar
+				</div>
+				<div id="IconsBoxesTiny">
+					<img src="img/icon-help-center.png"><br/>
+					Help Center
+				</div>
+			</div>
+		</div>
+
+		<div class="searchBox2">
+			<div class="keywordSearch">
+				Search&nbsp;&nbsp;&nbsp;
+				<input type="text" name="Search" value="Search by Keywords" id="searchMiddle"></input>
+			</div>
+		</div>
+		<div class="box50">
+			<div class="widgets">
+				<div class="HeaderBoxBlue">
+					<h3>Browse For Training</h3>
+					<a href="#"><button class="button" >View All</button></a>
+				</div>
+				<div class="clear"></div>
+				<table class="HeaderBoxBody">
+				  <tr>
+				    <th></th>
+				    <th >Due Date</th>
+				  </tr>
+				  <tr>
+				    <td>Complete: Be the Best Office Manager</td>
+				    <td>12/31/2016</td>
+				  </tr>
+				  <tr>
+				    <td>Complete: Be the Best Office Manager</td>
+				    <td>12/31/2016</td>
+				  </tr>
+				  <tr>
+				    <td>Complete: Be the Best Office Manager</td>
+				    <td>12/31/2016</td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+		<div class="box50">
+			<div class="widgets">
+				<div class="HeaderBoxBlue">
+					<h3>To Do's</h3>
+					<a href="#"><button class="button" >View All</button></a>
+				</div>
+				<div class="clear"></div>
+
+				<table class="HeaderBoxBody">
+				  <tr>
+				    <th></th>
+				    <th>&nbsp;</th>
+				  </tr>
+				  <tr>
+				    <td>View transcript</td>
+				  </tr>
+				  <tr>
+				    <td>View Training Exemption Requests 
+				    	<br/> (1 pending requests)</td>
+				  </tr>
+				</table>
+			</div>
+		</div>
+
+		<div class="footer">
+			<img src="img/csod_logo_navy.png" class="logoFooter" alt="">
+			<div class="textFooter">
+				Powered by Cornerstone OnDemand, Inc. 2000-2015<br/>
+				All Rights Reserved. <a href="#">Terms</a> - <a href="#">Privacy</a> - <a href="#">Cookies</a>
+			</div>
+		</div>
+
+	</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+  x[slideIndex-1].style.width = "100%";
+}
+
+
+function myFunction() {
+    var x = document.getElementById("Header2");
+    if (x.className === "header2") {
+        x.className += " responsive";
+    } else {
+        x.className = "header2";
+    }
+}
+
+</script>
+</body>
+
+</html>
